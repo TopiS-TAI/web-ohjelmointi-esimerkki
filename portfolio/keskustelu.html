@@ -13,22 +13,26 @@
     </header>
     <main>
         <h1>Keskustelu</h1>
-        <form>
-            <textarea name="message" id="message" cols="60" rows="10"></textarea><br>
-            <label for="email">Sähköpostiosoite</label>
-            <input type="email" name="email" id="email"><br>
-            <label for="birthday">Syntymäpäivä</label>
-            <input type="date" name="birthday" id="birthday"><br>
-            <label for="allow">Sallin tietojani käytettävän markkinointiin
+        <button command="show-modal" commandfor="viestilomake">Uusi viesti</button>
+        <dialog id="viestilomake">
+            <form>
+                <textarea name="message" id="message" cols="60" rows="10"></textarea><br>
+                <label for="email">Sähköpostiosoite</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="birthday">Syntymäpäivä</label>
+                <input type="date" name="birthday" id="birthday"><br>
+                <label for="allow">Sallin tietojani käytettävän markkinointiin
                 <input type="checkbox" name="allow" id="allow">
-            </label><br>
-            <label for="type">Viestin tyyppi</label>
-            <select name="type" id="type"><br>
-                <option value="question">Kysymys</option>
-                <option value="comment">Kommentti</option>
-            </select>
-            <button>Lähetä</button>
-        </form>
+                </label><br>
+                <label for="type">Viestin tyyppi</label>
+                <select name="type" id="type"><br>
+                    <option value="question">Kysymys</option>
+                    <option value="comment">Kommentti</option>
+                </select><br>
+            </form>
+            <button command="close" commandfor="viestilomake">Lähetä</button>
+            <button command="close" commandfor="viestilomake">Peruuta</button>
+        </dialog>
         <section>
             <hr>
             <section>

@@ -32,3 +32,32 @@ section {
     border: 1px solid #521;
     background-color: #f86;
 }
+
+a {
+    color: darkgoldenrod;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+a:visited {
+    color: gray;
+}
+
+button {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+button:hover {
+    background-color: goldenrod;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: lightyellow;
+}
+
+li:last-child {
+    font-style: italic;
+}

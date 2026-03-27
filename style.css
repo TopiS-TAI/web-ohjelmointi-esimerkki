@@ -1,11 +1,26 @@
+@font-face {
+    font-family: "Barriecito Regular";
+    src: url('./assets/Barriecito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('./assets/Quicksand-VariableFont_wght.ttf');
+}
+
 body {
     background-color: #EC8;
     margin-left: 64px;
     margin-right: 64px;
 }
 
+* {
+    font-family: Quicksand, Helvetica, Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #247;
+    font-family: "Barriecito Regular", Helvetica, Arial, Helvetica, sans-serif;
 }
 
 h1 {

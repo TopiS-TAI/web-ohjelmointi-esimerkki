@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-list {
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-list li > * {
+    vertical-align: middle;
+}
+
+.flex-list li img {
+    max-width: 5em;
+    border-radius: 1em;
+    background-color: white;
+}

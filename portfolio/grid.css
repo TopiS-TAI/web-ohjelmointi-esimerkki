@@ -10,20 +10,34 @@ body {
         'footer footer';
     grid-template-rows: 8rem 2rem auto 3rem;
     grid-template-columns: 10rem auto;
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
+    
+    & > header {
+        padding: 1em 3em;
+        grid-area: header;
+    }
+    
+    & > nav {
+        padding: 1em 3em;
+        grid-area: nav;
+    }
+    
+    & > aside {
+        padding: 2em 1em 1em 3em;
+        grid-area: aside;
+    }
+    
+    
+    & > main {
+        padding: 5em 3em 1em;
+        grid-area: main;
+    }
+    
+    & > footer {
+        padding: 3em 0;
+        margin: 0 auto;
+        grid-area: footer;
+        a:not(:last-child) {
+            margin-right: 2em;
+        }
+    }
 }
